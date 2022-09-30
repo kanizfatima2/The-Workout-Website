@@ -1,9 +1,16 @@
+/* eslint-disable no-undef */
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
+
 import "./Activity.css";
 
 const Activity = () => {
+    // Set breaktime 
+    const [breaktime, setBreaktime] = useState("");
+    const breakTime = (e) => {
+        setBreaktime(e.target.innerHTML);
+    }
     return (
         <div>
             <div className="profile">
@@ -30,16 +37,17 @@ const Activity = () => {
             </div>
             <p className='fw-bold ms-3 mt-4'>Add a Break</p>
             <div className="break-container py-3 text-wrap">
-                <button className='btn btn-info rounded-circle text-sm-center'><small className='text-wrap text-center'>10s</small></button>
-                <button className='btn btn-info rounded-circle'>20s</button>
-                <button className='btn btn-info rounded-circle'>30s</button>
-                <button className='btn btn-info rounded-circle'>40s</button>
-                <button className='btn btn-info rounded-circle'>50s</button>
+                <button onClick={(e) => breakTime(e)} className='btn btn-info rounded-circle text-sm-center'>10s</button>
+                <button onClick={(e) => breakTime(e)} className='btn btn-info rounded-circle'>20s</button>
+                <button onClick={(e) => breakTime(e)} className='btn btn-info rounded-circle'>30s</button>
+                <button onClick={(e) => breakTime(e)} className='btn btn-info rounded-circle'>40s</button>
+                <button onClick={(e) => breakTime(e)} className='btn btn-info rounded-circle'>50s</button>
             </div>
             <p className='fw-bold ms-3 mt-4'>Exercise Details</p>
             <div className="details ms-3 mt-4 p-3 me-3">
                 <p>Exercise Time:</p>
-                <p>Break Time:</p>
+                <p>Break Time: <span className='fw-bold'> {breaktime}</span>
+                </p>
             </div>
             <div class="d-flex justify-content-center">
                 <button className='btn btn-info w-75 fw-bold mt-3 mb-3'>Activity Completed</button>

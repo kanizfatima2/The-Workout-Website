@@ -12,7 +12,9 @@ const Header = () => {
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
-    // console.log(data)
+
+
+
     return (
 
         <div>
@@ -33,6 +35,7 @@ const Header = () => {
                 <div className="summery-container">
                     <Activity></Activity>
                 </div>
+
             </div>
         </div>
     );
