@@ -2,6 +2,8 @@
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import "./Activity.css";
 
@@ -11,6 +13,12 @@ const Activity = () => {
     const breakTime = (e) => {
         setBreaktime(e.target.innerHTML);
     }
+    //Adding Toast
+    const notify = () => {
+        toast.success('Activity Completed!!', {
+            position: toast.POSITION.TOP_CENTER
+        });
+    };
     return (
         <div>
             <div className="profile">
@@ -50,7 +58,8 @@ const Activity = () => {
                 </p>
             </div>
             <div class="d-flex justify-content-center">
-                <button className='btn btn-info w-75 fw-bold mt-3 mb-3'>Activity Completed</button>
+                <button onClick={notify} className='btn btn-info w-75 fw-bold mt-3 mb-3'>Activity Completed</button>
+                <ToastContainer />
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import Card from '../Card/Card';
+import Question from '../Question/Question';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { fa-duotone fa - dumbbell } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
@@ -29,6 +30,12 @@ const Header = () => {
                                 data.map((data) => <Card data={data} key={data.id}></Card>)
                             }
                         </div>
+
+                        <div className="mt-5 p-5">
+                            <h3 className='text-center fw-bold mb-3'>Here is Q/A!!</h3>
+                            <Question></Question>
+                        </div>
+
                     </div>
                 </div>
 
