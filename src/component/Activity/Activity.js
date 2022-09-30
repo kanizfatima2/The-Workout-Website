@@ -24,6 +24,7 @@ const Activity = ({ data }) => {
             position: toast.POSITION.TOP_CENTER
         });
     };
+
     return (
         <div>
             <div className="profile">
@@ -56,6 +57,7 @@ const Activity = ({ data }) => {
                 <button onClick={(e) => breakTime(e)} className='btn btn-info rounded-circle'>40s</button>
                 <button onClick={(e) => breakTime(e)} className='btn btn-info rounded-circle'>50s</button>
             </div>
+            {/* //Calculation part  */}
             <p className='fw-bold ms-3 mt-4'>Exercise Details</p>
             <div className="details ms-3 mt-4 p-3 me-3">
                 <p>Exercise Time: <span className='fw-bold'>{total}</span> seconds</p>
