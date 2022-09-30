@@ -2,8 +2,8 @@ import React from 'react';
 import './Card.css';
 
 const Card = (props) => {
-
     const { name, descriptions, img, time, age } = props.data;
+
     return (
         <div>
 
@@ -17,7 +17,7 @@ const Card = (props) => {
                         <p><small>Time required :<span className='fw-bold'>{time}s</span> </small></p>
                     </div>
                     <div class="card-footer">
-                        <button className='btn btn-info w-100 fw-bold text-dark'>Add to List</button>
+                        <button onClick={() => props.handleExercise(props.data)} className='btn btn-info w-100 fw-bold text-dark'>Add to List</button>
                     </div>
                 </div>
 

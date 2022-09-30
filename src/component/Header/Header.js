@@ -14,7 +14,14 @@ const Header = () => {
             .then(data => setData(data))
     }, [])
 
+    //setting Exercise time
+    const [exerciseTime, setTime] = useState([]);
 
+    const handleExercise = (data) => {
+        // console.log(data)
+        const newTime = [...exerciseTime, data];
+        setTime(newTime);
+    }
 
     return (
 
@@ -27,7 +34,7 @@ const Header = () => {
                     <div className='container mt-5'>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                             {
-                                data.map((data) => <Card data={data} key={data.id}></Card>)
+                                data.map((data) => <Card data={data} key={data.id} handleExercise={handleExercise}></Card>)
                             }
                         </div>
 
@@ -40,7 +47,7 @@ const Header = () => {
                 </div>
 
                 <div className="summery-container">
-                    <Activity></Activity>
+                    <Activity data={exerciseTime}></Activity>
                 </div>
 
             </div>

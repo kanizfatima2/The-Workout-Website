@@ -7,7 +7,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import "./Activity.css";
 
-const Activity = () => {
+const Activity = ({ data }) => {
+    // console.log(data)
+    //adding total exercise Time
+    let total = 0;
+    for (const time of data) {
+        total = total + time.time;
+    }
     // Set breaktime 
     const [breaktime, setBreaktime] = useState("");
     const breakTime = (e) => {
@@ -53,7 +59,7 @@ const Activity = () => {
             </div>
             <p className='fw-bold ms-3 mt-4'>Exercise Details</p>
             <div className="details ms-3 mt-4 p-3 me-3">
-                <p>Exercise Time:</p>
+                <p>Exercise Time: <span className='fw-bold'>{total}</span> seconds</p>
                 <p>Break Time: <span className='fw-bold'> {breaktime}</span>
                 </p>
             </div>
