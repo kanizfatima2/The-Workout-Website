@@ -1,9 +1,10 @@
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import Card from '../Card/Card';
 import Question from '../Question/Question';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { fa-duotone fa - dumbbell } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import './Header.css';
 
 const Header = () => {
@@ -28,9 +29,11 @@ const Header = () => {
         <div>
             <div className='header-container'>
                 <div className='container mt-5 ms-5 header '>
-                    {/* <FontAwesomeIcon icon="fa-duotone fa-dumbbell"></FontAwesomeIcon> */}
-                    <h3 className='fw-bold'>The Workout Zone</h3>
-                    <h5>Select today’s exercise</h5>
+                    <div className="d-flex">
+                        <FontAwesomeIcon className="fontAwsome" icon={faDumbbell}></FontAwesomeIcon>
+                        <h3 className='fw-bold ms-3'>The Workout Zone</h3>
+                    </div>
+                    <h5 className='mt-2'>Select today’s exercise</h5>
                     <div className='container mt-5'>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                             {

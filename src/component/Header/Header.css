@@ -9,6 +9,11 @@
 
 }
 
+.fontAwsome {
+    font-size: 40px;
+    color: rgb(120, 61, 13);
+}
+
 /* .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
