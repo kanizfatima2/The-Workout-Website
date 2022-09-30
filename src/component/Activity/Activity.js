@@ -18,6 +18,7 @@ const Activity = ({ data }) => {
     const breakTime = (e) => {
         setBreaktime(e.target.innerHTML);
     }
+
     //Adding Toast
     const notify = () => {
         toast.success('Activity Completed!!', {
