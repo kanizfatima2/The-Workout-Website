@@ -8,7 +8,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import "./Activity.css";
 
 const Activity = ({ data }) => {
-    // console.log(data)
     //adding total exercise Time
     let total = 0;
     for (const time of data) {
