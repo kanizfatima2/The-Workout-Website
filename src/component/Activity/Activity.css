@@ -1,0 +1,36 @@
+.profile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile img {
+    height: 25%;
+    width: 25%;
+}
+
+.Profile-info {
+    display: flex;
+    /* padding: 5px; */
+    justify-content: space-around;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+}
+
+.break-container {
+    display: flex;
+    /* padding: 5px; */
+    justify-content: space-around;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.break-container button {
+    min-width: 15%;
+    min-height: 20%;
+}
+
+.details {
+    background-color: antiquewhite;
+    border-radius: 10px;
+}

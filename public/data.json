@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Ashtanga yoga",
+        "descriptions": "This type of yoga practice uses ancient yoga teachings. However, it became popular during the 1970s.This type of yoga practice uses ancient ",
+        "img": "https://yogapractice.com/wp-content/uploads/2019/04/What-is-Vinyasa-Yoga-Everything-You-Need-to-Know-1.jpg",
+        "age": 30,
+        "time": 30
+    },
+    {
+        "id": 2,
+        "name": "Bikram yoga",
+        "descriptions": "People practice Bikram yoga, also known as hot yoga, in artificially heated rooms at a temperature of nearly 105oF and 40% humidity. It consists of 26 poses and a sequence of two breathing exercises.",
+        "img": "https://yogajala.com/wp-content/uploads/2022/03/Bikram-Yoga-Explained_-26-Bikram-Yoga-Poses-2.jpg",
+        "age": 25,
+        "time": 20
+    },
+    {
+        "id": 3,
+        "name": "Hatha yoga",
+        "descriptions": "This is a generic term for any type of yoga that teaches physical poses. Hatha classes usually serve as a gentle introduction to the basic poses of yoga.",
+        "img": "https://cdn.shopify.com/s/files/1/0077/7587/9266/files/hatha-yoga-kuh-lotuscrafts_1024x1024.jpg?v=1576668776",
+        "age": 30,
+        "time": 25
+    },
+    {
+        "id": 4,
+        "name": "Iyengar yoga",
+        "descriptions": "This type of yoga practice focuses on finding the correct alignment in each pose with the help of a range of props, such as blocks, blankets, straps, chairs, and bolsters.",
+        "img": "https://static.wixstatic.com/media/89416a_71388e634664416b86461373807d891d~mv2.jpg/v1/fill/w_640,h_480,al_b,lg_1,q_80,enc_auto/89416a_71388e634664416b86461373807d891d~mv2.jpg",
+        "age": 25,
+        "time": 10
+    },
+    {
+        "id": 5,
+        "name": "Kripalu yoga",
+        "descriptions": "This type teaches practitioners to know, accept, and learn from the body. A student of Kripalu yoga learns to find their own level of practice by looking inward.",
+        "img": "https://missyogafit.com/wp-content/uploads/2019/02/kripalu-yoga.jpg",
+        "age": 30,
+        "time": 20
+    },
+    {
+        "id": 6,
+        "name": "Kundalini yoga",
+        "descriptions": "Kundalini yoga is a system of meditation that aims to release pent-up energy.",
+        "img": "https://draxe.com/wp-content/uploads/2019/04/kundalini-yoga-header.jpg",
+        "age": 20,
+        "time": 15
+    },
+    {
+        "id": 7,
+        "name": "Power yoga",
+        "descriptions": "In the late 1980s, practitioners developed this active and athletic type of yoga based on the traditional Ashtanga system.",
+        "img": "https://www.yogajournal.com/wp-content/uploads/2021/12/chaturanga-poses-for-toning_getty-scaled.jpg",
+        "age": 25,
+        "time": 10
+    },
+    {
+        "id": 8,
+        "name": "Prenatal yoga",
+        "descriptions": "Prenatal yoga uses poses that practitioners have created with pregnant people in mind. This yoga style can help people get back into shape after giving birth, and support health during pregnancy.",
+        "img": "https://cdn.cdnparenting.com/articles/2017/09/271078604-H.jpg",
+        "age": 30,
+        "time": 20
+    },
+    {
+        "id": 9,
+        "name": "Restorative yoga",
+        "descriptions": "This is a relaxing method of yoga. A person spends a restorative yoga class in four or five simple poses, using props such as blankets and bolsters to sink into deep relaxation without exerting any effort when holding the pose.",
+        "img": "https://uploads.thealternativepress.com/uploads/photos/best_b97a92acc9670b73d7da_Restorative_Yoga_with_title.jpg",
+        "age": 30,
+        "time": 25
+    }
+]
