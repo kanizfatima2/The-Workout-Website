@@ -17,6 +17,7 @@ const Card = (props) => {
                         <p><small>Time required :<span className='fw-bold'>{time}s</span> </small></p>
                     </div>
                     <div class="card-footer">
+                        {/* Button clicking  */}
                         <button onClick={() => props.handleExercise(props.data)} className='btn btn-info w-100 fw-bold text-dark'>Add to List</button>
                     </div>
                 </div>
